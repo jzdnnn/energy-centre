@@ -1,0 +1,266 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 11px;
+    color: #4caf4f;
+    font-family: Poppins;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+/* Logo */
+.logo-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+/* Navbar Buttons */
+.navbar-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #57aa46;
+    width: 165px;
+    height: 37.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    box-sizing: border-box;
+    color: #57aa46;
+}
+
+.button:hover {
+    background-color: #57aa46;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+.button-active {
+    border-radius: 50px;
+    background-color: #57aa46;
+    border: 1px solid #57aa46;
+    width: 165px;
+    height: 37.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    box-sizing: border-box;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-active:hover {
+    background-color: #57aa46;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+.label {
+    line-height: 24px;
+}
+
+/* Content 1 */
+.content-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    width: 100%;
+    height: 360px;
+    font-size: 32px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.content-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container-1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hydroelectric-dam, .solar-panel, .wind-turbine {
+    width: 33.33%;
+    height: 100%;
+}
+
+.text-wrapper-1 {
+    position: absolute;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    height: 100%;
+}
+
+/* Content 2 */
+.content-2 {
+    width: 100%;
+    position: relative;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: Poppins;
+    padding-top: 80px;
+}
+
+.sub-title-2 {
+    position: relative;
+    top: 0;
+    left: 6px;
+    width: 100%; 
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.image-container-2 {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.label-1, .label-2, .label-3, .label-4 {
+    width: 385px; 
+    height: 335px; 
+    margin: 15px; 
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 15px;
+    transition: transform 0.3s ease; 
+}
+
+.label-1:hover, .label-2:hover, .label-3:hover, .label-4:hover {
+    transform: scale(1.05);
+}
+
+.image-label-1, .image-label-2, .image-label-3, .image-label-4 {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px;
+}
+
+.text-label-1, .text-label-2, .text-label-3, .text-label-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.judul-1, .judul-2, .judul-3, .judul-4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-1, .text-2, .text-3, .text-4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* Content 3 */
+.content-3 {
+    width: 100%;
+    position: relative;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: Poppins;
+    padding-top: 80px;
+}
+
+.sub-title-3 {
+    position: relative;
+    top: 0;
+    left: 6px;
+    width: 100%;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 20px;
+}
+/* Responsiveness using Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .content-1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-container-1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hydroelectric-dam, .solar-panel, .wind-turbine {
+        width: 100%;
+        height: auto;
+    }
+
+    .label-1, .label-2, .label-3, .label-4 {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+    }
+
+    .text-label-1, .text-label-2, .text-label-3, .text-label-4 {
+        font-size: 12px; 
+    }
+}
